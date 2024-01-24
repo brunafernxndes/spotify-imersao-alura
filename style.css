@@ -49,7 +49,7 @@ h1 {
     font-family: "DM Sans", sans-serif;
 }
 
-.sidebar__navigation2 {
+.library {
     background-color: #121212;
     border-radius: 8px;
     padding: 16px 10px 16px 10px;
@@ -93,7 +93,7 @@ h1 {
     margin-right: 10px;
 }
 
-.sidebar__navigation2 .biblioteca a svg {
+.library .library__container a svg {
     width: 16px;
     height: 16px;
     margin-left: 120px;
@@ -105,7 +105,7 @@ h1 {
     margin-left: 10px;
 }
 
-.biblioteca {
+.library__container {
     margin-bottom: 20px;
 }
 
@@ -147,7 +147,7 @@ h1 {
     margin-left: 8px;
 }
 
-.sidebar__navigation2 .idioma a svg {
+.library .idioma a svg {
     width: 18px;
     height: 18px;
     margin-left: 8px;
