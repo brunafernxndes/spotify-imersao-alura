@@ -152,3 +152,58 @@ h1 {
     height: 18px;
     margin-left: 8px;
 }
+
+.container-flex {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 8px;
+    background-image: linear-gradient(90deg,#af2896,#509bf5);
+    padding: 11px 24px 7px 15px;
+    height: 50px;
+    gap: 24px;
+    position: relative;
+    width: 96%;
+    cursor: pointer;
+    vertical-align: baseline;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin: 0 8px 8px 0;
+    color: #fff;
+    line-height: 22px;
+}
+
+strong {
+    font-size: 14px;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 700;
+}
+
+#inscricao {
+    font-size: 15px;
+    font-family: "DM Sans", sans-serif;
+}
+
+.flex-item2 button {
+    background-color: var(--background-base,#ffffff);
+    color: var(--text-base,#000000);
+    height: 48px;
+    padding: 8px 32px;
+    border-radius: 9999px;
+    border-style: none;
+    font-size: 15px;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 700;
+}
+
+.zoom:hover {
+    transform: scale(1.03);
+    cursor: pointer;
+    text-transform: none;
+    font-size: 15px;
+}
