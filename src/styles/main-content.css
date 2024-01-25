@@ -104,3 +104,195 @@
     transform: scale(1.03);
     cursor: pointer;
 }
+
+/* PLAYLIST */
+.center-container {
+    /*height: 72vh;*/
+    /*padding-top: 1rem;*/
+    /*margin: 1.25rem; /* 20px para rem */
+    /*border-radius: 0.625rem; /* 10px para rem */
+    /*background-color: #121212;*/
+    margin-left: 310px;
+    margin-right: 0;
+    margin-top: 12px;
+}
+  
+.texto {
+    /*padding: 28px 0 10px 8px;
+    height: 100px;
+    position: fixed;
+    margin-left: 310px;
+    margin-right: 0;
+    margin-top: 12px;
+    background-color: red;*/
+    padding: 40px 0 10px 42px;
+    margin: 10px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    background-color: #121212;
+    position: fixed;
+    top: 96px;
+    left: 310px;
+    height: 25.5vh;
+    width: 156.3vh;
+    margin-right: 10px;
+}
+  
+.texto #greeting {
+    color: var(--text-base-light);
+    font-size: 2rem; /* 32px para rem */
+    font-weight: 700;
+    margin-bottom: 3rem; /* 48px para rem */
+}
+  
+.texto .session {
+    color: var(--text-base-light);
+    font-size: 1.5rem; /* 24px para rem */
+    font-weight: 700;
+}
+  
+/* SCROLL */
+.images_playlist {
+    /*max-height: 52vh;*/
+    /*margin: 3rem; /* 24px para rem */
+    /*overflow-y: auto;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 16px;
+    margin: 10px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    background-color: #121212;
+    position: fixed;
+    top: 96px;
+    left: 310px;
+    height: 49vh;
+    width: 157.7vh;
+    margin-right: 10px;
+    overflow-y: auto;
+    margin-top: 170px;
+    padding-top: 0;
+    max-width: 90%;
+    overflow: scroll
+}
+  
+.images_playlist::-webkit-scrollbar {
+    width: 0.0625rem; /* 1px para rem */
+}
+  
+/* Thumb */
+.images_playlist::-webkit-scrollbar-thumb {
+    background-color: transparent;
+}
+/* FIM SCROLL */
+  
+.wrapper {
+    display: grid; /* define o modelo de layout do elemento como uma grade */
+    justify-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;  /* número de colunas na grade e a largura de cada coluna */
+    gap: 1rem;
+    margin-bottom: 1rem;
+    margin-top: 10px;
+}
+  
+.cards {
+    position: relative;
+    width: 13.75rem; /* 220px para rem */
+    height: 12.5rem; /* 200px para rem */
+    overflow: hidden;
+    border-radius: 0.5rem; /* 8px para rem */
+}
+  
+.cards span {
+    padding: 1rem; /* 16px para rem */
+    position: absolute;
+    color: var(--text-base-light);
+    font-size: 1.5rem; /* 24px para rem */
+    font-weight: 700;
+}
+  
+/* COLOR CARDS/ POSIÇÃO DAS IMAGENS*/
+.card1 {
+    background-color: rgb(0, 100, 80);
+    color: #fff;
+}
+
+.cards img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 107px;
+    width: auto;
+    transform: rotate(25deg) translate(18%, -2%);
+}
+
+.card2 {
+    background-color: rgb(132, 0, 231);
+    color: #fff;
+}
+
+.card3 {
+    background-color: rgb(30, 50, 100);
+    color: #fff;
+}
+
+.card4 {
+    background-color: rgb(140, 25, 50);
+    color: #fff;
+}
+
+.card5 {
+    background-color: rgb(232, 17, 91);
+    color: #fff;
+}
+
+.card6 {
+    background-color: rgb(83, 122, 161);
+    color: #fff;
+}
+
+.card7 {
+    background-color: rgb(142, 102, 172);
+    color: #fff;
+}
+
+.card8 {
+    background-color: rgb(20, 138, 8);
+    color: #fff;
+}
+
+.card9 {
+    background-color: rgb(30, 50, 100);
+    color: #fff;
+}
+
+.card10 {
+    background-color: rgb(233, 20, 41);
+    color: #fff;
+}
+
+.card11 {
+    background-color: rgb(80, 55, 80);
+    color: #fff;
+}
+
+.card12 {
+    background-color: rgb(216, 64, 0);
+    color: #fff;
+}
+
+.card13 {
+    background-color: rgb(186, 93, 7);
+    color: #fff;
+}
+
+.card14 {
+    background-color: rgb(0, 30, 80);
+    color: #fff;
+}
+
+.card15 {
+    background-color: rgb(60, 30, 80);
+    color: #fff;
+}
