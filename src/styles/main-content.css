@@ -176,6 +176,7 @@
     padding-top: 0;
     max-width: 90%;
     overflow: scroll;
+    scrollbar-color: transparent transparent;
 }
   
 .images_playlist::-webkit-scrollbar {
@@ -410,7 +411,8 @@
   
   .play {
     position: fixed;
-    margin-left: 190px;
+    margin-left: 180px;
+    bottom: 373px;
   }
   
   .play .fa-play {
@@ -424,7 +426,7 @@
     transition: all ease 0.4s;
   }
   
-  .artist-card:hover .play .fa-play {
+  .card-img:hover .play .fa-play {
     opacity: 1;
     transform: translateY(-20px);
   }
