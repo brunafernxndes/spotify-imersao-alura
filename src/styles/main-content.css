@@ -134,8 +134,9 @@
     top: 96px;
     left: 310px;
     height: 25.5vh;
-    width: 156.3vh;
+    width: 153.4vh;
     margin-right: 10px;
+    padding-left: 25px;
 }
   
 .texto #greeting {
@@ -167,14 +168,14 @@
     position: fixed;
     top: 96px;
     left: 310px;
-    height: 49vh;
-    width: 157.7vh;
+    height: 43.5vh;
+    width: 152.3vh;
     margin-right: 10px;
-    overflow-y: auto;
+    /*overflow-y: auto;*/
     margin-top: 170px;
     padding-top: 0;
     max-width: 90%;
-    overflow: scroll
+    overflow: scroll;
 }
   
 .images_playlist::-webkit-scrollbar {
@@ -296,3 +297,146 @@
     background-color: rgb(60, 30, 80);
     color: #fff;
 }
+
+/* CARD ARTISTA */
+
+/*.artist {
+    --column-count: 5;
+    --grid-gap: 24px;
+    --min-container-width: 372px;
+    background-color: red;
+  }*/
+  
+  .hidden {
+    display: none;
+  }
+  
+  .grid-container {
+    grid-gap: var(--grid-gap);
+    display: grid;
+    grid-template-columns: repeat(var(--column-count), minmax(0, 1fr));
+    min-width: var(--min-container-width);
+  }
+  
+  .artist-card {
+    background: #181818;
+    border-radius: 8px;
+    -ms-flex: 1;
+    flex: 1;
+    padding: 16px;
+    transition: background-color 0.3s ease;
+    display: grid;
+    width: 982px;
+    height: 418px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    /*margin-left: 280px;*/
+    padding: 40px 0 0 46px;
+    margin: 10px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    position: fixed;
+    top: 96px;
+    left: 310px;
+    margin-right: 10px;
+  }
+  
+  .card-img:hover {
+    background-color: #252525;
+    height: 260px;
+    border-radius: 10px;
+  }
+
+  .card-img {
+    background-color: #202020;
+    height: 260px;
+    border-radius: 10px;
+  }
+
+  .grid-container .artist-card .card-img img{
+    height: 154px;
+    width: 154px;
+    margin-bottom: 16px;
+    position: relative;
+    margin-left: 20px;
+    margin-top: 15px;
+  }
+  
+  /*.artist-img {
+    padding-bottom: 100%;
+    position: relative;
+    width: 200px;
+    height: 5px;
+    margin-bottom: 16px;
+  }*/
+  
+  .artist-img {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    border-radius: 50%;
+  }
+  
+  .card-text {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    margin-top: 215px;
+    position: fixed;
+    top: 120px;
+    left: 382px;
+  }
+  
+  .card-text a {
+    display: inline-block;
+    max-width: 100%;
+    vertical-align: middle;
+  }
+  
+  .artist-name {
+    box-sizing: border-box;
+    margin-block: 0px;
+    font-size: 16px;
+    font-weight: 700;
+    padding-block-end: 8px;
+  }
+  
+  .artist-categorie {
+    color: #6a6a6a;
+    font-weight: 400;
+    font-size: 0.875rem;
+  }
+  
+  .play {
+    position: fixed;
+    margin-left: 190px;
+  }
+  
+  .play .fa-play {
+    position: absolute;
+    right: 10px;
+    padding: 18px;
+    background-color: #1db954;
+    border-radius: 100%;
+    font-size: 14px;
+    opacity: 0;
+    transition: all ease 0.4s;
+  }
+  
+  .artist-card:hover .play .fa-play {
+    opacity: 1;
+    transform: translateY(-20px);
+  }
+  
+  .play .fa-play:hover {
+    padding: 20px;
+    cursor: pointer;
+  }
+  
+  #result-artist {
+    padding: 20px 40px;
+    margin-top: 0;
+  }
+  /* FIM CARD ARTISTA */
+  
